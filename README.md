@@ -83,8 +83,8 @@
                 <a href="#about" class="nav-link text-slate-600 font-medium">About Us</a>
                 <a href="#team" class="nav-link text-slate-600 font-medium">Meet the Team</a>
             </div>
-            <!-- 这里是您的 WhatsApp 电话号码，请替换 '8613787400928' 为您的号码（包括国家代码） -->
-            <a href="https://wa.me/1234567890?text=Hello,%20I'm%20interested%20in%20partnering%20with%20iGarden." target="_blank" class="hidden md:inline-block bg-sky-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform hover:scale-105">Partner Now</a>
+            <!-- 这个链接会自动更新，请在下方的JS变量中修改号码 -->
+            <a id="partner-link-desktop" href="#" target="_blank" class="hidden md:inline-block bg-sky-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform hover:scale-105">Partner Now</a>
             <button id="mobile-menu-button" class="md:hidden text-slate-600 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
@@ -96,8 +96,8 @@
             <a href="#video-demo" class="block py-2 px-4 text-sm text-slate-600 hover:bg-slate-100">Product Demo</a>
             <a href="#about" class="block py-2 px-4 text-sm text-slate-600 hover:bg-slate-100">About Us</a>
             <a href="#team" class="block py-2 px-4 text-sm text-slate-600 hover:bg-slate-100">Meet the Team</a>
-            <!-- 这里是您的 WhatsApp 电话号码，请替换 '8613787400928' 为您的号码（包括国家代码） -->
-            <a href="https://wa.me/1234567890?text=Hello,%20I'm%20interested%20in%20partnering%20with%20iGarden." target="_blank" class="block py-2 px-4 text-sm bg-sky-600 text-white hover:bg-sky-700 text-center">Partner Now</a>
+            <!-- 这个链接会自动更新，请在下方的JS变量中修改号码 -->
+            <a id="partner-link-mobile" href="#" target="_blank" class="block py-2 px-4 text-sm bg-sky-600 text-white hover:bg-sky-700 text-center">Partner Now</a>
         </div>
     </header>
 
@@ -125,8 +125,8 @@
                         </div>
                         <p class="text-center mt-4 text-slate-600">The chart shows there are over 40 million pools worldwide. Only 23% of pools use a robot, meaning a whopping 77% of the market is waiting for an innovative solution.</p>
                         <div class="text-center mt-8">
-                             <!-- 这里是您的 WhatsApp 电话号码，请替换 '8613787400928' 为您的号码（包括国家代码） -->
-                             <a href="https://wa.me/1234567890?text=Hello,%20I'm%20interested%20in%20partnering%20with%20iGarden." target="_blank" class="inline-block bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105">Partner with us</a>
+                             <!-- 这个链接会自动更新，请在下方的JS变量中修改号码 -->
+                             <a id="partner-link-opportunity" href="#" target="_blank" class="inline-block bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105">Partner with us</a>
                         </div>
                     </div>
                     <div class="fade-in">
@@ -464,8 +464,8 @@
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
                     Join us and be part of this pool cleaning revolution. We look forward to building a long-term partnership with you and creating a new chapter of success together.
                 </p>
-                <!-- 这里是您的 WhatsApp 电话号码，请替换 '8613787400928' 为您的号码（包括国家代码） -->
-                <a href="https://wa.me/1234567890?text=Hello,%20I'm%20interested%20in%20partnering%20with%20iGarden." target="_blank" class="bg-white text-sky-600 font-bold py-4 px-10 rounded-full shadow-lg transition-transform hover:scale-105 inline-block">Contact Us</a>
+                <!-- 这个链接会自动更新，请在下方的JS变量中修改号码 -->
+                <a id="partner-link-cta" href="#" target="_blank" class="bg-white text-sky-600 font-bold py-4 px-10 rounded-full shadow-lg transition-transform hover:scale-105 inline-block">Contact Us</a>
             </div>
         </section>
 
@@ -479,8 +479,17 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function () {
+                // TODO: 只需在这里修改电话号码，所有的WhatsApp链接都会自动更新
+                const phoneNumber = '8613787400928';
+
                 const mobileMenuButton = document.getElementById('mobile-menu-button');
                 const mobileMenu = document.getElementById('mobile-menu');
+
+                // 更新所有WhatsApp链接的href属性
+                const partnerLinks = document.querySelectorAll('[id^="partner-link-"]');
+                partnerLinks.forEach(link => {
+                    link.href = `https://wa.me/${phoneNumber}?text=Hello,%20I'm%20interested%20in%20partnering%20with%20iGarden.`;
+                });
 
                 mobileMenuButton.addEventListener('click', () => {
                     mobileMenu.classList.toggle('hidden');
