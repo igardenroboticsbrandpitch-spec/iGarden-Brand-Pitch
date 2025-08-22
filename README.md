@@ -83,8 +83,8 @@
                 <a href="#about" class="nav-link text-slate-600 font-medium">About Us</a>
                 <a href="#team" class="nav-link text-slate-600 font-medium">Meet the Team</a>
             </div>
-            <!-- 联系方式已移除 -->
-            <a href="#" class="hidden md:inline-block bg-sky-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform hover:scale-105">Learn More</a>
+            <!-- Keep this link to the official store as it is -->
+            <a href="https://store.igarden.ai" class="hidden md:inline-block bg-sky-600 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform hover:scale-105">Learn More</a>
             <button id="mobile-menu-button" class="md:hidden text-slate-600 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
@@ -96,8 +96,8 @@
             <a href="#video-demo" class="block py-2 px-4 text-sm text-slate-600 hover:bg-slate-100">Product Demo</a>
             <a href="#about" class="block py-2 px-4 text-sm text-slate-600 hover:bg-slate-100">About Us</a>
             <a href="#team" class="block py-2 px-4 text-sm text-slate-600 hover:bg-slate-100">Meet the Team</a>
-            <!-- 联系方式已移除 -->
-            <a href="#" class="block py-2 px-4 text-sm bg-sky-600 text-white hover:bg-sky-700 text-center">Learn More</a>
+            <!-- Keep this link to the official store as it is -->
+            <a href="https://store.igarden.ai" class="block py-2 px-4 text-sm bg-sky-600 text-white hover:bg-sky-700 text-center">Learn More</a>
         </div>
     </header>
 
@@ -125,8 +125,8 @@
                         </div>
                         <p class="text-center mt-4 text-slate-600">The chart shows there are over 40 million pools worldwide. Only 23% of pools use a robot, meaning a whopping 77% of the market is waiting for an innovative solution.</p>
                         <div class="text-center mt-8">
-                             <!-- 联系方式已移除 -->
-                             <a href="#" class="inline-block bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105">Learn More</a>
+                             <!-- Keep this link to the official store as it is -->
+                             <a href="https://store.igarden.ai" class="inline-block bg-sky-600 text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform hover:scale-105">Learn More</a>
                         </div>
                     </div>
                     <div class="fade-in">
@@ -417,46 +417,6 @@
             </div>
         </section>
 
-        <!-- New section for team members -->
-        <section id="team" class="py-20 bg-white">
-            <div class="container mx-auto px-6">
-                <div class="text-center mb-12">
-                    <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4 fade-in">Meet Our Team</h2>
-                    <p class="text-lg text-slate-600 max-w-3xl mx-auto fade-in">The driving force behind iGarden's innovation and success.</p>
-                </div>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <!-- Team Member 1 -->
-                    <div class="bg-slate-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center fade-in">
-                        <img src="https://play-lh.googleusercontent.com/ygjLKqOy8mxgjh5DFCWBiGT98rKVo5MPCQAt7qan79_6EsY6oztDMh9gv0T0LmNhjjQ" alt="Team member Andy Chen" class="rounded-full w-24 h-24 mb-4 object-cover">
-                        <h3 class="text-xl font-semibold text-slate-900 mb-1">Andy Chen</h3>
-                        <p class="text-sky-600 font-medium text-sm">CEO & Founder</p>
-                        <p class="text-slate-600 text-sm mt-2 italic">"Driven by a 'stupid' dream, we invest in technology to create an 'Innovation Utopia' for a smarter outdoor life."</p>
-                    </div>
-                    <!-- Team Member 2 -->
-                    <div class="bg-slate-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center fade-in" style="transition-delay: 0.2s;">
-                        <img src="https://play-lh.googleusercontent.com/ygjLKqOy8mxgjh5DFCWBiGT98rKVo5MPCQAt7qan79_6EsY6oztDMh9gv0T0LmNhjjQ" alt="Team member Zheng Chengdong" class="rounded-full w-24 h-24 mb-4 object-cover">
-                        <h3 class="text-xl font-semibold text-slate-900 mb-1">Zheng Chengdong</h3>
-                        <p class="text-sky-600 font-medium text-sm">Head of R&D</p>
-                        <p class="text-slate-600 text-sm mt-2 italic">"We leverage our Full-inverter heritage to pioneer AI-wireless technology, ensuring an ultimate customer experience."</p>
-                    </div>
-                    <!-- Team Member 3 -->
-                    <div class="bg-slate-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center fade-in" style="transition-delay: 0.4s;">
-                        <img src="https://play-lh.googleusercontent.com/ygjLKqOy8mxgjh5DFCWBiGT98rKVo5MPCQAt7qan79_6EsY6oztDMh9gv0T0LmNhjjQ" alt="Team member Cao Zhiling" class="rounded-full w-24 h-24 mb-4 object-cover">
-                        <h3 class="text-xl font-semibold text-slate-900 mb-1">Cao Zhiling</h3>
-                        <p class="text-sky-600 font-medium text-sm">Head of Product</p>
-                        <p class="text-slate-600 text-sm mt-2 italic">"By building win-win partnerships, we aim to deliver products that bring tangible value to every user, everywhere."</p>
-                    </div>
-                    <!-- Team Member 4 -->
-                    <div class="bg-slate-100 p-6 rounded-lg shadow-md flex flex-col items-center text-center fade-in" style="transition-delay: 0.6s;">
-                        <img src="https://play-lh.googleusercontent.com/ygjLKqOy8mxgjh5DFCWBiGT98rKVo5MPCQAt7qan79_6EsY6oztDMh9gv0T0LmNhjjQ" alt="Team member Eva Tang" class="rounded-full w-24 h-24 mb-4 object-cover">
-                        <h3 class="text-xl font-semibold text-slate-900 mb-1">Eva Tang</h3>
-                        <p class="text-sky-600 font-medium text-sm">AI-wireless Robot Sales Director</p>
-                        <p class="text-slate-600 text-sm mt-2 italic">"My mission is to listen to our partners and customers, turning their needs into a seamless sales journey and a better product."</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- New CTA section, more impactful -->
         <section id="contact-us" class="bg-sky-600 py-20 text-center text-white">
             <div class="container mx-auto px-6">
@@ -464,8 +424,8 @@
                 <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8">
                     Join us and be part of this pool cleaning revolution. We look forward to building a long-term partnership with you and creating a new chapter of success together.
                 </p>
-                <!-- 联系方式已移除 -->
-                <a href="#" class="bg-white text-sky-600 font-bold py-4 px-10 rounded-full shadow-lg transition-transform hover:scale-105 inline-block">Find Out More</a>
+                <!-- Update the href to point to the user's WhatsApp number -->
+                <a href="https://wa.me/8613787400928" class="bg-white text-sky-600 font-bold py-4 px-10 rounded-full shadow-lg transition-transform hover:scale-105 inline-block">Contact Us on WhatsApp</a>
             </div>
         </section>
 
